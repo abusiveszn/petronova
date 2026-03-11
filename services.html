@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Petronova Energy</title>
+    <meta name="description" content="End-to-end logistics solutions tailored to your business">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .services-page-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .service-img-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-img-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-img-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .service-img-card-body {
+            padding: 1.5rem;
+            flex: 1;
+        }
+
+        .service-img-card h3 {
+            font-size: 1.1rem;
+            color: #121D2B;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .service-img-card p {
+            color: #6B7280;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .cta-section {
+            background-color: #1E293B; /* Dark navy blue from image */
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: white;
+            font-weight: 700;
+            text-transform: none;
+        }
+
+        .cta-section p {
+            color: #9CA3AF;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+        
+        @media (max-width: 768px) {
+            .services-page-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="Petronova Energy logo design.png" alt="" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#calculator">Calculator</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <header class="hero contact-hero"
+        style="min-height: 55vh; background-image: url('https://images.unsplash.com/photo-1494412519320-ce3dc885e7d5?q=80&w=2000&auto=format&fit=crop'); background-position: center;">
+        <div class="hero-overlay" style="background-color: rgba(18, 29, 43, 0.75);"></div>
+        <div class="container hero-content text-center">
+            <h1 style="margin-bottom: 0.5rem; font-size: 2.8rem;">Our Services</h1>
+            <p style="font-size: 1.05rem; color: #E5E7EB;">End-to-end logistics solutions tailored to your business</p>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="section bg-light" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="services-page-grid">
+                <!-- Service 1 -->
+                <div class="service-img-card">
+                    <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?q=80&w=800&auto=format&fit=crop"
+                        alt="Freight Forwarding">
+                    <div class="service-img-card-body">
+                        <h3>Freight Forwarding</h3>
+                        <p>Air, sea, and land freight solutions tailored to your timeline and budget. We handle full-container loads, LCL, and express air cargo.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-img-card">
+                    <img src="warehousing_service.png"
+                        alt="Warehousing & Storage">
+                    <div class="service-img-card-body">
+                        <h3>Warehousing & Storage</h3>
+                        <p>Secure, climate-controlled storage with inventory management. Strategic locations in Singapore and across the region.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-img-card">
+                    <img src="https://images.unsplash.com/photo-1565891741441-64926e441838?q=80&w=800&auto=format&fit=crop"
+                        alt="Customs Clearance">
+                    <div class="service-img-card-body">
+                        <h3>Customs Clearance</h3>
+                        <p>Streamlined customs documentation and clearance for imports and exports. We navigate regulations so you don't have to.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-img-card">
+                    <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop"
+                        alt="Last-Mile Delivery">
+                    <div class="service-img-card-body">
+                        <h3>Last-Mile Delivery</h3>
+                        <p>Reliable final-leg delivery to your customers. Same-day and next-day options available in key markets.</p>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-img-card">
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop"
+                        alt="Supply Chain Solutions">
+                    <div class="service-img-card-body">
+                        <h3>Supply Chain Solutions</h3>
+                        <p>End-to-end supply chain design, optimization, and management. From sourcing to delivery, we've got you covered.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Solution CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need a custom solution?</h2>
+            <p>Tell us about your logistics needs and we'll get back with a tailored quote.</p>
+            <a href="contact.html" class="btn btn-primary" style="padding: 0.75rem 2rem; border-radius: 6px; text-transform: none; font-size: 1rem;">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white" style="background-color: #2F3E46;">
+        <div class="container footer-bottom d-flex align-items-center justify-content-between py-3">
+            <p class="text-light-muted text-sm mb-0 flex-1">&copy; 2026 Petronova Energy. All rights reserved.</p>
+            <div class="footer-links flex-1 d-flex justify-content-end">
+                <ul class="d-flex m-0 p-0" style="gap: 1.5rem; list-style: none;">
+                    <li><a href="index.html#home" class="text-light-muted text-sm hover-white">Home</a></li>
+                    <li><a href="index.html#calculator" class="text-light-muted text-sm hover-white">Calculator</a></li>
+                    <li><a href="index.html#about" class="text-light-muted text-sm hover-white">About</a></li>
+                    <li><a href="services.html" class="text-light-muted text-sm hover-white">Services</a></li>
+                    <li><a href="contact.html" class="text-light-muted text-sm hover-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
